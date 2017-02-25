@@ -1,0 +1,365 @@
+@import "bourbon";
+
+/*==========  Desktop First Method  ==========*/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	.basket {
+		padding: 45px 0;
+	}
+	.basket__title {
+		margin: 0 0 32px 0;
+		h1 {
+	    	font-size: 32px;
+		}
+	}
+	
+	.basket__tab-item {
+		display: block;
+		float: left;
+		width: 33.3%;
+		text-align: center;
+	}
+	.basket__title-line {
+    	padding: 18px 20px 18px 0;
+    	span:nth-child(1) {
+			width: 60px;
+		}
+    	span:nth-child(2) {
+			width: 190px;
+			margin: 0 20px 0 0;
+		}
+    	span:nth-child(3) {
+			width: 120px;
+		}
+    }
+	.basket__item-box {
+		padding: 20px 20px 60px 20px;
+	}
+	.basket__items-box.active {
+		display: block;
+	}
+	.basket__item {
+		display: block;
+	}
+	.basket__item-box {
+		width: 300px;
+	}
+	.basket__item-name {
+		position: absolute;
+		left: 0;
+		bottom: 25px;
+		
+		padding: 20px 20px 0 20px;
+		font-weight: 600;
+	}
+	.basket__item-code {
+		padding: 22px 0 0 140px;
+	}
+	.basket__item-discount {
+		padding: 0 0 60px 0;
+	}
+	.basket__item-price {
+		width: 190px;
+		padding: 0 0 60px 0;
+	}
+	.basket__item-value {
+		width: 160px;
+		padding: 0 20px 60px 0;
+		text-align: right;
+	}
+	.basket__item-buttons {
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+		width: 220px;
+		padding: 0;
+	}
+	.basket__item-btn-delete {
+		margin: 0 20px 0 0;
+	}
+	.basket__sum {
+		padding: 38px 0 0 0;
+	}
+	.order-type__tab-item {
+		float: left;
+		display: block;
+		width: 33.3%;
+		height: 52px;
+		padding: 8px 40px;
+		text-align: center;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.basket {
+		padding: 25px 0;
+	}
+	.basket__title {
+		position: relative;
+		padding: 15px 0;
+		margin: 0;
+		text-align: center;
+		background-color: #dcdacc;
+		h1 {
+	    	font-size: 24px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			right: 12px;
+			top: 24px;
+			width: 14px;
+    		height: 8px;
+			background-image: url(../img/icon/sprites.png);
+			background-position: -263.01px -166.98px;
+		}
+	}
+	.basket__title.active {
+		&:after {
+			background-position: -240px -165.98px;
+		}
+	}
+	.basket__tabs {
+		display: none;
+	}
+	.basket__tabs.active {
+		display: block;	
+	}
+	.basket__tab-item {
+	    display: block;
+	    float: none;
+	    width: auto;
+	    border-top: 1px solid #eee;
+	    border-left: 1px solid #eee;
+	    border-right: 1px solid #eee;
+	}
+	.basket__tab-item.active {
+		background-color: #eee;
+	}
+	.basket__title-line {
+		display: none;
+	}
+	.basket__items-box {
+		border-top: 1px solid #ddd;
+	}
+	.basket__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		padding: 20px;
+	}
+	.basket__item-box {
+		float: left;
+		display: block;
+		max-width: 360px;
+		width: auto;
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+	.basket__item-name {
+		position: static;
+		padding: 40px 0 0 110px;
+	}
+	.basket__item-code {
+		display: none;
+	}
+	.basket__item-discount {
+		display: none;
+	}
+	.basket__item-price {
+		clear: left;
+		float: left;
+		display: block;
+		width: auto;
+		padding: 0;
+	}
+	.basket__item-value {
+		display: block;
+		width: auto;
+		padding: 0;
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+	}
+	.basket__item-buttons {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		bottom: auto;
+		width: auto;
+	}
+	.basket__item-btn-hold {
+		display: none;
+	}
+	.basket__item-btn-delete {
+		position: relative;
+		margin: 0;
+		font-size: 0;
+		min-width: 0;
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		border: 2px solid #aaa;
+		&:after {
+			content: '+';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			color: #aaa;
+			font-size: 28px;
+			font-weight: 400;
+			text-transform: uppercase;
+			line-height: 28px;
+			transform: rotate(45deg);
+			text-align: center;
+		}
+		&:hover, &:active {
+			background-color: #fff;
+			border-color: #000;
+			&:after {
+				color: #000;
+			}	
+		}
+	}
+	.basket__coupon {
+		float: none;
+		input {
+			float: left;
+			display: block;
+			width: 48%;
+			margin: 0 4% 0 0;
+		}
+		button {
+			float: left;
+			display: block;
+			width: 48%;
+			padding: 10px 16px;
+		}
+	}
+	.basket__coupon-title {
+		display: none;
+	}
+	.basket__coupon-title-mobile {
+		display: block;
+	}
+	.basket__sum {
+		clear: both;
+		float: none;
+		font-size: 24px;
+		text-align: center;
+	}
+	
+	.order-type__tab-item {
+		float: none;
+		width: auto;
+		margin: 0 0 2px 0;
+		position: relative;
+		padding: 8px 0 8px 22px;
+		text-align: left;
+		color: #505050;
+		background-color: #eee;
+		span {
+			display: block;
+			max-width: 160px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			right: 12px;
+			top: 24px;
+			width: 14px;
+    		height: 8px;
+			background-image: url(../img/icon/sprites.png);
+			background-position: -263.01px -166.98px;
+		}
+	}
+	
+	.order-type__tab-item.active {
+		&:after {
+			background-position: -240px -165.98px;
+			background-color: #dcdacc;
+		}
+	}
+	.order-type__form-item {
+		padding: 35px 22px;
+	}
+	.order-type__form-name,
+	.order-type__form-surname,
+	.order-type__form-mail,
+	.order-type__form-login,
+	.order-type__form-password,
+	.order-type__form-phone {
+		float: none;
+		width: 100%;
+		margin: 0 0 25px 0;
+	}
+	.order-type__form-get-inform {
+		float: none;
+		width: 100%;
+		//max-width: 245px;
+		margin: 0 0 25px 0;
+		font-size: 13px;
+		line-height: 16px;
+		height: auto;
+		&:before {
+			top: -2px;
+		}
+	}
+	.order-type__form-submit {
+		button {
+			display: block;
+			width: 100%;
+			padding: 18px 10px;
+		}
+	}
+}
+@media only screen and (max-width : 640px) {
+	
+}
+	
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+	
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/**/
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	/**/
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	/**/
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	/**/
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	/**/
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	/**/
+}

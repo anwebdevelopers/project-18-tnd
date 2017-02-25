@@ -1,0 +1,76 @@
+.order__step-item-buyer {
+
+}
+
+.order__step-item-buyer-name,
+.order__step-item-buyer-surname,
+.order__step-item-buyer-email,
+.order__step-item-buyer-phone,
+.order__step-item-buyer-index,
+.order__step-item-buyer-adress,
+.order__step-item-buyer-comment {
+	@extend .clearfix;
+	margin: 0 0 30px 0;
+	label {
+		display: block;
+		margin: 0 0 10px 0;
+		font-size: 16px;
+	}
+	input, textarea {
+		float: left;
+		width: 48%;
+		outline: none;
+		border: 1px solid #ddd;
+		box-shadow: none;
+		padding: 10px;
+	}
+	input {
+		height: 44px;
+		
+	}
+	textarea {
+		min-height: 90px;
+		resize: vertical;
+	}
+	label.error {
+		float: right;
+		width: 48%;
+		padding: 14px;
+		margin: 0;
+		min-height: 44px;
+		text-align: center;
+		background-color: #ee9a86;
+		color: #fff;
+		font-weight: 600;
+	}
+	input.error {
+	    border: 1px solid #ee9a86;
+	}
+}
+.order__step-item-basket {
+	.basket__items-box {
+		display: block;
+	}
+}
+
+.order__step-values {
+	@extend .clearfix;
+	margin: 0 0 20px 0;
+	padding: 18px 0;
+	border-top: 3px solid #dcdacc;
+	border-bottom: 3px solid #dcdacc;
+}
+.order__step-values-item {
+	float: left;
+	width: 25%;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 14px;
+
+}
+.order__step-values-item:first-child {
+	text-align: left;
+}
+.order__step-values-item:last-child {
+	text-align: right;
+}

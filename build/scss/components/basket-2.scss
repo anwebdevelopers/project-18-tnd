@@ -1,0 +1,111 @@
+.order-type {
+	position: relative;
+}
+.order-type__tabs {
+	@extend .clearfix;
+}
+.order-type__tab-item {
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px 36px;
+	font-size: 18px;
+	cursor: pointer;
+	color: #888;
+}
+.order-type__tab-item.active {
+	background-color: #dcdacc;
+	color: #505050;
+}
+.order-type__form-item {
+	display: none;
+	padding: 35px 0;
+	border: 1px solid #ddd;
+}
+
+.order-type__form-item.active {
+		display: block;
+	}
+.order-type__form-name,
+.order-type__form-surname,
+.order-type__form-mail,
+.order-type__form-login,
+.order-type__form-password,
+.order-type__form-phone {
+	float: left;
+	display: block;
+	width: 45%;
+	margin: 0 2.5% 25px 2.5%;
+	span {
+		display: block;
+		margin: 0 0 12px 0;
+		font-size: 16px;
+	}
+	input {
+		width: 100%;
+		padding: 10px;
+		height: 44px;
+		border: 1px solid #ddd;
+		outline: none;
+		font-size: 16px;
+	}
+}
+.order-type__form-get-inform {
+	position: relative;
+	float: left;
+	display: block;
+	height: 44px;
+	width: 45%;
+	margin: 28px 2.5% 25px 2.5%;
+	padding: 0 0 0 40px;
+	font-size: 18px;
+	line-height: 22px;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 11px;
+		width: 22px;
+		height: 22px;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+}
+#getinform {
+	display: none;
+}
+#getinform:checked ~ label[for="getinform"] {
+	&:before {
+		border: 1px solid $main-color;
+		background-image: url(../img/icon/sprites.png);
+		background-position: -287.94px -183.95px;
+		// width: 16px;
+		// height: 16px;
+	}
+}
+.order-type__form-submit {
+	clear: both;
+	padding: 25px 0 0 0;
+	text-align: center;
+	button {
+		display: inline-block;
+		vertical-align: top;
+		padding: 18px 30px;
+		background-color: $accent-color;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 600;
+		font-size: 22px;
+		border: 2px solid $accent-color;
+		transition: background-color .3s ease, color .3s ease;
+		&:hover, &:active {
+			background-color: #fff;
+			color: $accent-color;
+		}
+	}
+	span {
+		display: block;
+		margin: 20px 0 0 0;
+		font-size: 14px;
+	}
+}

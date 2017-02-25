@@ -1,0 +1,44 @@
+.main-seo {
+	padding: 55px 0;
+	h1 {
+		margin: 0 0 25px 0;
+		font-size: 26px;
+		line-height: 26px;
+		color: #000;
+	}
+	h2 {
+		margin: 0 0 25px 0;
+		font-size: 18px;
+		line-height: 18px;
+		color: #000;
+	}
+	p {
+		margin: 0 0 20px 0;
+		font-size: 15px;
+		line-height: 24px;
+	}
+	ul {
+		margin: 0 0 20px 0;
+		padding: 0 0 0 54px;
+		list-style: none;
+		font-size: 15px;
+		line-height: 24px;
+		li {
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				left: -30px ;
+				top: 6px;
+				background-image: url(../img/icon/sprites.png);
+				background-position: -7.01104736328125px -192.97335815429688px ;
+				width: 14px;
+				height: 10px;
+			}
+		}
+	}
+}
+.main-seo__wrapper {
+	@extend .container;
+	@extend .clearfix;
+}

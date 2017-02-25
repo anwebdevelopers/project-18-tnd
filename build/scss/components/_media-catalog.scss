@@ -1,0 +1,299 @@
+@import "bourbon";
+
+/*==========  Desktop First Method  ==========*/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	.catalog__title {
+		h1, h2 {
+			font-size: 32px;
+		}
+	}
+	.catalog-filters__price-list {
+		ul {
+			li {
+				margin-right: 10px;
+				a {
+					
+				}
+			}
+		}
+	}
+	.catalog-box__item {
+		width: 32.3%;
+		margin: 1px .5% 20px .5%;
+	}
+	.catalog-box__pagination {
+		padding: 0 140px;
+		a, span {
+			margin: 0 1px;
+		}
+	}
+	.catalog-box__pagination-prev,
+	.catalog-box__pagination-next {
+		a {
+			width: 140px;
+		}
+	}
+	.catalog-text__title {
+	   h1 {
+	    	font-size: 32px;
+	   }
+	}
+	.catalog-text__text {
+		font-size: 13px;
+		line-height: 21px;
+	}
+	.catalog-text__img-box {
+	    margin: 0 0 20px;
+	}
+	.type {
+		padding: 40px 0;
+	}
+	.type__title {
+		h1 {
+			font-size: 32px;
+		}
+	}
+	.type__text {
+		font-size: 13px;
+		line-height: 21px;
+	}
+	.type__list-ul,
+	.type__list-ol,
+	.type__list-links {
+		ul {
+			font-size: 13px;
+		}
+	}	
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.catalog {
+	    padding: 0;
+	}
+	.catalog__top-line {
+	    margin: 30px 0;
+	}
+	.catalog__title {
+		float: none;
+		text-align: center;
+		h1, h2 {
+			font-size: 24px;
+		}
+	}
+	.catalog__value {
+		display: none;
+	}
+	.catalog__text {
+		display: none;
+	}
+	.catalog-parts__title {
+		display: block;
+	}
+	.catalog-parts__list {
+		display: none;
+		ul {
+			padding: 20px 0 0 20px;
+			li {
+				display: block;
+			}
+		}
+	}
+	.catalog-parts.show {
+		.catalog-parts__title {
+			&:after {
+				background-position: -239.9990234375px -165.97708129882812px ;
+			}
+		}
+		.catalog-parts__list {
+			display: block;
+		}
+	}
+	.catalog-filters__price-title {
+		line-height: 42px;
+	}
+	.catalog-filters__price-list {
+		position: relative;
+		float: none;
+		margin: 0 0 0 90px;
+		ul {
+			position: absolute;
+			z-index: 2;
+			right: 0;
+			left: 0;
+			top: 42px;
+			display: none;
+			border: 1px solid #dadada;
+			background-color: #fff;
+			li {
+				display: block;
+				margin: 0;
+				a {
+					font-size: 15px;
+					line-height: 42px;
+				}
+			}
+		}
+	}
+	.catalog-filters__price-value {
+		display: block;
+	}
+	.catalog-filters__price-list.show {
+		ul {
+			display: block;
+		}
+		.catalog-filters__price-value {
+
+			&:after {
+				background-position: -239.9990234375px -165.97708129882812px ;
+			}
+		}
+	}
+
+	.catalog-filters__sort-title {
+		line-height: 42px;
+	}
+	.catalog-filters__sort-list {
+		position: relative;
+		float: none;
+		margin: 0 0 0 90px;
+		ul {
+			position: absolute;
+			z-index: 1;
+			right: 0;
+			left: 0;
+			top: 42px;
+			display: none;
+			border: 1px solid #dadada;
+			background-color: #fff;
+			li {
+				display: block;
+				margin: 0;
+				a {
+					font-size: 15px;
+					line-height: 42px;
+					&:after {
+						display: none;
+				    }
+				}
+			}
+			
+			.active-up {
+				a {
+					&:after {
+						display: block;
+						top: 15px;
+						right: 10px;
+					}
+					&:hover, &:active, &:focus {
+	    				&:after {
+							display: block;
+							top: 15px;
+							right: 10px;
+						}
+					}
+				}
+			}
+			.active-down {
+				a {
+					&:after {
+						display: block;
+						top: 20px;
+						right: 10px;
+					}
+					&:hover, &:active, &:focus {
+	    				&:after {
+							display: block;
+							top: 20px;
+							right: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.catalog-filters__sort-value {
+		display: block;
+	}
+	.catalog-filters__sort-list.show {
+		ul {
+			display: block;
+		}
+		.catalog-filters__sort-value {
+			&:after {
+				background-position: -239.9990234375px -165.97708129882812px ;
+			}
+		}
+	}
+	.catalog-box__item {
+		width: 48%;
+		margin: 1px 1% 20px 1%;
+	}
+	.catalog-box__pagination {
+		display: none;
+	}
+	.catalog-box__show-more {
+		display: block;
+	}
+	.catalog-text {
+		display: none;
+	}
+	.type__title {
+		h1 {
+			font-size: 24px;
+		}
+	}
+}
+@media only screen and (max-width : 640px) {
+	
+}
+	
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+	.catalog-box__item {
+		float: none;
+		width: 100%;
+		margin: 1px 0 20px 0;
+	}
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/**/
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	/**/
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	/**/
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	/**/
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	/**/
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	/**/
+}
+

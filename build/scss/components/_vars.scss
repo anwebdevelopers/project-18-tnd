@@ -1,0 +1,34 @@
+@import "bourbon";
+
+$main-color: #7ca084;
+$accent-color: #f99e22;
+$fc: #505050;
+
+@mixin slide {
+	transition: max-height .5s,padding .5s;
+}
+// .header__nav-under {
+// 			// display: block;
+// 			max-height: 1000px;
+// 			padding: 40px 70px;
+// 			border-left: 2px solid #7ca084;
+//     		border-right: 2px solid #7ca084;
+//     		border-bottom: 2px solid #7ca084;
+// 		}
+// .header__nav-under {
+// 	// display: none;
+// 	position: absolute;
+// 	z-index: 2;
+// 	left: -2px;
+// 	right: -2px;
+// 	top: 66px;
+// 	max-height: 0;
+// 	padding: 0 70px;
+// 	overflow: hidden;
+//     text-align: left;
+//     border-left: 2px solid #7ca084;
+//     border-right: 2px solid #7ca084;
+//     border-bottom: 0px solid #7ca084;
+//     background-color: #fff;
+// 	transition: max-height .5s,padding .5s,border .5s;
+// }

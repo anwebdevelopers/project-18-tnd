@@ -1,0 +1,45 @@
+.main-pictures {
+
+}
+.main-pictures__wrapper {
+	@extend .container;
+	@extend .clearfix;
+}
+.main-pictures__item {
+	display: block;
+	position: relative;
+	width: 49%;
+	margin: 0 0 20px 0;
+}
+.main-pictures__item-left {
+	float: left;
+}
+.main-pictures__item-inner {
+	position: absolute;
+	left: 7px;
+	top: 7px;
+	right: 7px;
+	bottom: 7px;
+	border: 1px solid #fff;
+}
+.main-pictures__item-right {
+	float: right;
+}
+.main-pictures__item-img {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.main-pictures__item-text {
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	top: 50%;
+	font-size: 22px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    transform: translateY(-50%);
+    line-height: 28px;
+}

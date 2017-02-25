@@ -1,0 +1,78 @@
+@import "bourbon";
+@import "components/vars.scss";
+
+
+*::-webkit-input-placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: #666;
+}
+
+
+
+
+//Custom Styles Here
+@import "components/header.scss";
+@import "components/main-slider.scss";
+@import "components/main-banners.scss";
+@import "components/main-new.scss";
+@import "components/main-top.scss";
+@import "components/main-gift.scss";
+@import "components/main-seo.scss";
+@import "components/footer.scss";
+//Page product
+@import "components/product-1.scss";
+@import "components/product-2.scss";
+//Page catalog
+@import "components/catalog-1.scss";
+@import "components/catalog-2.scss";
+//Page type
+@import "components/type.scss";
+//Page basket
+@import "components/basket-1.scss";
+@import "components/basket-2.scss";
+//Page order
+@import "components/order-1.scss";
+@import "components/order-2.scss";
+//account
+@import "components/account.scss";
+//Popup
+@import "components/popup.scss";
+
+
+//@import "build/scss/components/magnific-popup.scss";
+
+//ALWAYS END
+@import "components/media-main.scss";
+@import "components/media-product.scss";
+@import "components/media-catalog.scss";
+@import "components/media-basket.scss";
+@import "components/media-order.scss";
+@import "components/media-popup.scss";
+
+//Load Libs SASS
+//@import "html/libs/animate/animate.sass";
+//@import "html/libs/superfish/dist/css/superfish";
+//@import "html/libs/font-awesome/scss/font-awesome.scss";
+//@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
+//@import "html/libs/magnific-popup/dist/magnific-popup";

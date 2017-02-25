@@ -1,0 +1,194 @@
+@import "bourbon";
+
+/*==========  Desktop First Method  ==========*/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	.order {
+		padding: 45px 0;
+	}
+	.order__title {
+		margin: 0 0 32px 0;
+		h1 {
+	    	font-size: 32px;
+		}
+	}
+	.order__message {
+    	padding: 20px 30px;
+    }
+	.order__step-type-deliv-item {
+		width: 320px;
+
+	}
+	.order__step-type-deliv-item-name {
+		width: 170px;
+	}
+	.order__step-item-delivery .order__step-text {
+		margin: 10px 0 20px 0;
+	    position: static;
+	    width: auto;
+	    height: auto;
+	    text-align: center;
+	    p {
+	    	position: static;
+	    	transform: none;
+	    }
+	}
+	.order__step-item-payment .order__step-text {
+	   	margin: 10px 0 20px 0;
+	    position: static;
+	    width: auto;
+	    height: auto;
+	    text-align: center;
+	    p {
+	    	position: static;
+	    	transform: none;
+	    }
+	}
+	.order__step-type-pay-item {
+		width: 310px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.order {
+		padding: 25px 0;
+	}
+	.order__title {
+		text-align: center;
+		h1 {
+	    	font-size: 24px;
+		}
+	}
+	.order__step-indicator {
+		display: none;
+	}
+	.order__step-box {
+	    padding: 30px 10px;
+	}
+	.order__step-item-region .jq-selectbox:nth-child(1) {
+	    margin: 0 0 20px 0;
+	}
+	.order__step-item-region .jq-selectbox {
+	    display: block!important;
+	    float: none;
+	    width: auto;
+	}
+	.order__step-btn-prev,
+	.order__step-btn-next {
+		padding: 18px 10px;
+		width: 48%;
+	}
+	.order__step-btn-submit {
+		float: none;
+		display: block;
+		width: 100%;
+		padding: 18px 10px;
+	}
+
+	.order__step-type-deliv-item {
+		//display: block;
+	    width: 268px;
+	}
+	.order__step-type-deliv-item-name {
+	    width: 120px;
+	}
+	.order__step-variant-deliv-item {
+	    float: none;
+	    width: auto;
+	    margin: 0 0 30px 0;
+	    label {
+	    	padding: 0 0 0 40px;
+	    }
+	}
+	.order__step-item-payment .order__step-box {
+	    position: relative;
+	    padding: 30px 10px 10px 10px;
+	}
+
+	.order__step-type-pay-item {
+		//display: block;
+	    width: 268px;
+	}
+	.order__step-item-buyer {
+		
+	}
+	.order__step-item-buyer-name,
+	.order__step-item-buyer-surname,
+	.order__step-item-buyer-email,
+	.order__step-item-buyer-phone,
+	.order__step-item-buyer-index,
+	.order__step-item-buyer-adress,
+	.order__step-item-buyer-comment {
+		input, textarea {
+			float: none;
+			width: 100%;
+		}
+		label.error {
+			float: none;
+			width: 100%;
+			margin: 10px 0 0 0;
+		}
+	}
+	.order__step-values {
+		padding: 18px 0 0 0;
+	}
+	.order__step-values-item {
+		float: none;
+		width: auto;
+		margin: 0 0 20px 0;
+		text-align: center;
+		font-size: 16px;
+	}
+	.order__step-values-item:first-child,
+	.order__step-values-item:last-child {
+		text-align: center;
+	}
+}
+@media only screen and (max-width : 640px) {
+	
+}
+	
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+	
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/**/
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	/**/
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	/**/
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	/**/
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	/**/
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	/**/
+}

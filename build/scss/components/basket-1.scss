@@ -1,0 +1,265 @@
+.basket {
+	padding: 60px 0;
+}
+.basket__wrapper {
+	@extend .container;
+}
+.basket__title {
+	margin: 0 0 44px 0;
+	h1 {
+		margin: 0;
+    	font-size: 36px;
+	}
+}
+.basket__tabs {
+	@extend .clearfix;
+}
+.basket__tab-item {
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px 36px;
+	font-size: 18px;
+	cursor: pointer;
+	color: #888;
+}
+.basket__tab-item.active {
+	background-color: #dcdacc;
+	color: #505050;
+}
+.basket__title-line {
+	padding: 18px 180px 18px 0;
+	border: 1px solid #ddd;
+	text-align: right;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	span {
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+	}
+	span:nth-child(1) {
+		width: 60px;
+	}
+	span:nth-child(2) {
+		width: 170px;
+	}
+	span:nth-child(3) {
+		width: 110px;
+	}
+}
+.basket__container {
+	@extend .clearfix;
+	margin: 0 0 56px 0;
+}
+.basket__items-box {
+	display: none;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 0 28px 0;
+}
+.basket__items-box.active {
+	display: table;
+}
+.basket__item {
+
+	position: relative;
+	display: table-row;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.basket__item-box {
+	@extend .clearfix;
+	width: 430px;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 20px;
+}
+.basket__item-img {
+	float: left;
+	border: 1px solid #ddd;
+	img {
+		display: block;
+		width: 90px;
+		height: auto;	
+	}
+}
+.basket__item-name {
+	padding: 12px 0 0 120px;
+	font-size: 16px;
+}
+.basket__item-code {
+	padding: 22px 0 0 120px;
+	font-size: 12px;
+	color: #949494;
+	line-height: 16px;
+}
+.basket__item-discount {
+	display: table-cell;
+	vertical-align: middle;
+	width: 60px;
+	font-size: 20px;
+	text-align: center;
+}
+.basket__item-price {
+	display: table-cell;
+	vertical-align: middle;
+	width: 180px;
+	text-align: center;
+}
+.basket__item-price-old {
+	margin: 0 0 12px 0;
+	font-size: 14px;
+	span {
+		position: relative;
+		&:after {
+			content: '';
+		    width: 110%;
+		    height: 2px;
+		    background: #ec9200;
+		    position: absolute;
+		    top: 45%;
+		    left: -5%;
+		}
+	}
+}
+.basket__item-price-new {
+	font-size: 20px;
+	font-weight: 600;
+	color: #000;
+}
+.basket__item-value {
+	display: table-cell;
+	vertical-align: middle;
+	width: 140px;
+}
+.basket__item-value-box {
+	font-size: 0;
+	button, input {
+		display: inline-block;
+		vertical-align: top;
+		width: 38px;
+		height: 38px;
+		outline: none;
+		border: 1px solid #dcdacc;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 38px;
+		transition: background-color .3s ease;
+	}
+	input {
+		border-left: none;
+		border-right: none;
+	}
+	button {
+		padding: 0;
+		outline: none;
+		font-size: 20px;
+		background-color: #dcdacc;
+		&:hover, &:active {
+			border: 1px solid #ccc;
+			background-color: #ccc;
+		}
+	}
+}
+
+.basket__item-buttons {
+	display: table-cell;
+	vertical-align: middle;
+	width: 150px;
+	padding: 20px;
+	text-align: right;
+}
+.basket__item-btn-delete {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 96px;
+	margin: 0 0 12px 0;
+	padding: 12px 0;
+	outline: none;
+	border: 2px solid $main-color;
+	color: $main-color;
+	font-size: 12px;
+	text-transform: uppercase;
+	background-color: #fff;
+	font-weight: 600;
+	text-align: center;
+	transition: background-color .3s ease, color .3s ease;
+	&:hover, &:active {
+		background-color: $main-color;
+		color: #fff;
+	}
+}
+.basket__item-btn-hold {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 96px;
+	padding: 12px 0;
+	outline: none;
+	border: 2px solid $main-color;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	background-color: $main-color;
+	font-weight: 600;
+	text-align: center;
+	transition: background-color .3s ease, color .3s ease;
+	&:hover, &:active {
+		background-color: #fff;
+		color: $main-color;
+	}
+}
+
+.basket__coupon {
+	float: left;
+	input {
+		display: inline-block;
+		vertical-align: top;
+		width: 146px;
+		height: 36px;
+		padding: 10px;
+		margin: 0 15px 0 0;
+		outline: none;
+		border: 1px solid #ddd;
+	}
+	button {
+		display: inline-block;
+		vertical-align: top;
+		padding: 10px 22px;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 600;
+		border: 2px solid $main-color;
+		color: #fff;
+		font-size: 12px;
+		outline: none;
+		text-transform: uppercase;
+		background-color: $main-color;
+		font-weight: 600;
+		text-align: center;
+		transition: background-color .3s ease, color .3s ease;
+		&:hover, &:active {
+			background-color: #fff;
+			color: $main-color;
+		}
+	}
+}
+.basket__coupon-title {
+	margin: 0 0 15px 0;
+	font-size: 14px;
+}
+.basket__coupon-title-mobile {
+	clear: both;
+	padding: 15px 0 0 0;
+	margin: 0 0 15px 0;
+	display: none;
+	font-size: 14px;
+}
+.basket__sum {
+	float: right;
+	padding: 38px 48px 0 0;
+	font-size: 30px;
+	font-weight: 600;
+}
