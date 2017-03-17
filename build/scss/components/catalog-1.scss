@@ -7,7 +7,6 @@
 }
 .catalog__top-line {
 	@extend .clearfix;
-	margin: 30px 0 20px 0;
 }
 .catalog__title {
 	float: left;
@@ -51,6 +50,7 @@
 }
 
 .catalog-parts {
+	margin: 30px 0 0 0;
 	padding: 18px 0;
 	background: #f6f6f6;
 }
@@ -59,7 +59,7 @@
 }
 .catalog-parts__title {
 	position: relative;
-	
+
 	font-size: 15px;
 	color: #43392d;
 	display: none;
@@ -113,9 +113,10 @@
 			}
 		}
 	}
-	
+
 }
 .catalog-filters {
+	margin: 20px 0 0 0;
 	padding: 17px 0;
 }
 .catalog-filters__wrapper {
@@ -229,9 +230,9 @@
 			border: 4px solid transparent;
 			border-bottom: 4px solid #656565;
 
-		}		
+		}
 	}
-		
+
 	.active-down {
 		position: relative;
 		background-color: $main-color;
@@ -341,6 +342,3 @@
 		}
 	}
 }
-
-
-
